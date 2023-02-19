@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style_it.css">
+        <title>IT用語まとめ</title>
+    </head>
+    <body>
+        
+        <h2>IT用語まとめ</h2>
+                    
+        <div class="block1">
+            <h3>プルリクエスト（マージリクエスト）</h3>
+            <h4>GitHubの機能：開発者のローカルリポジトリでの変更をレビュワーに通知し、マージを依頼する機能。</h4>
+            <ul>
+                <li>機能追加や改修など、作業内容をレビュー・マージ担当者やその他関係者に通知する。</li>
+                <li>ソースコードの変更箇所をわかりやすく表示できる。</li>
+                <li>ソースコードに関するコミュニケーションの場を提供。</li>
+                <a href="https://ics.media/entry/14449/" target="_blank"><img src="https://ics.media/entry/14449/images/161222_github_pullrequest.png" width="60%"></a> 
+                <a href="https://licensecounter.jp/devops-hub/product/github/" target="_blank"><img src="https://licensecounter.jp/devops-hub/assets/images/products/github/img-gitHubEnterprise-1.png" width="60%"></a>
+            </ul>
+        </div>
+
+        <div class="block1">
+            <h3>Git Flow</h3>
+            <h4>Git をチームで使う上での運用方法を表したブランチモデルをサポートするツール（コマンド）。GitFlow は複雑なので、GitHubFlowなどシンプルなフローを使われることが多い。</h4>
+            <ul>
+                <li>git-flowは2種類のメインブランチ ( master , develop ) と3種類のサポートブランチ ( feature , release , hotfix )を切替ながら開発が進められる。</li>
+                <li><a href="https://tracpath.com/bootcamp/learning_git_git_flow.html" target="_blank">git-flwo詳細　参照ページ</a></li>
+                <a href="https://atmarkit.itmedia.co.jp/ait/articles/1708/01/news015.html" target="_blank"><img src="https://image.itmedia.co.jp/ait/articles/1708/01/at-it-git-15-001.jpg" width="60%"></a>
+                <li>GitHub Flowではメインのmasterブランチと機能開発のためのfeatureブランチの2つのみのシンプルな構成になっている。</li>
+                <li>git-flowにはない特徴としては、Pull Requestを使うという点と、masterブランチは常にデプロイ可能という点がある。</li>
+                <a href="https://atmarkit.itmedia.co.jp/ait/articles/1708/01/news015.html" target="_blank"><img src="https://image.itmedia.co.jp/ait/articles/1708/01/at-it-git-15-009.jpg" width="60%"></a>
+
+                
+            </ul>
+        </div>
+
+        <div class="block1">
+            <h3>CRON（クーロン）</h3>
+            <h4>Linuxを運用する上で欠かせない定期的にタスクを自動実行するためのツール。</h4>
+            <ul>
+                <li>GitHub の自動化ツール GitHub Actions のワークフローを使って特定の処理を定期的に実行する際に利用できる。</li>
+                <li>default branch以外は、cronの対象にならない、5分以下は動かない。
+                <li>設定時間から5分程のズレが生じる。</li>
+                <li><a href="https://gotohayato.com/content/514/" target="_blank">→参考ページ1</a>　　
+                    <a href="https://qiita.com/cardene/items/67d31f13d27865a12ecf" target="_blank">→参考ページ2</a>　　                    
+                    <a href="https://techblog.roxx.co.jp/entry/2020/12/25/191322" target="_blank">→参考ページ3</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="block2">
+            <h2>IT用語 課題外</h2><br>
+            <h2>第1章</h2> 
+            <ul class="mark">  
+                <li> IT<br>
+
+                    <table>
+                        <tr>
+                            <th>IT</th>
+                            <th>ICT</th>
+                            <th>IOT</th>
+                        </tr>
+                        <tr>
+                            <td>情報技術そのもの</td>
+                            <td>通信技術を使って人とインターネット、人と人が繋がる技術</td>
+                            <td>人を介さずモノが自動的にインターネットと繋がる技術</td>
+                        </tr>
+                        <tr>
+                            <td>コンピューター、ソフトウェア、アプリケーションなど</td>
+                            <td>メール、チャット、SNSの活用、通信販売の利用、ネット検索など</td>
+                            <td>自動運転、スマート家電など</td>
+                        </tr>
+                    </table>  
+                </li>
+            </ul>
+            <ul class="mark">
+                <li>【OS】<br>Operating Systemの略、コンピュータシステムを管理し、ハードウェアとソフトウェア間の通信を仲介する、システムソフトウェアのこと。OSは、アプリケーションソフトウェアとハ​​ードウェアを統合することで、ユーザーがより簡単なインターフェースを提供し、コンピュータのリソースを効率的に管理することができる。
+                </li>
+                <ul class="nomark">
+                    <li>Windows/macOS (Mac OS X)/UNIX/Linux
+                        <br>
+                        ●GUI=Windows/macOS　●CUI=UNIX/Linux（サーバー向けで安全性が高くシンプル安価。）<br>UnixはOSの一種で、現存する中でもっとも古いOSのひとつ。知的財産権が企業にある。
+                    </li>
+                </ul>    
+            </ul>  
+            <ul class="mark">  
+                <li> 言語・環境<br>
+                    マークアップ／フロントエンド
+                    HTML/CSS/JavaScript[jQuery]
+                </li>
+            </ul>                  
+            <ul class="nomark">
+                <li>
+                    【マークアップ】<br>Webページを作成するために使用される記述言語のこと。HTMLやXMLなどが代表的なマークアップ言語。これらの言語を使用することで、テキストや画像などの内容を視覚的に整えることができる。
+                </li>
+                <li>
+                    【フロントエンド】<br>ユーザーと直接データのやり取りを行う要素のことで、Web制作ではWebブラウザ側（クライアント側）を指す。フロントエンド開発で主に使われるプログラミング言語は、HTML・CSS・JavaScript・PHPなどがある。
+                </li>
+            </ul> 
+            <ul class="mark">
+                <li>
+                    サーバーサイド
+                    .NET（C#, VB）/Java[Java SE][Java EE（Jakarta EE）]/Perl/PHP/Ruby</li>
+
+                <li>
+                    【サーバーサイド】<br>WebアプリケーションやWebサイトなどのサーバー側で実行されるプログラムや処理のことを指す。これは、クライアント(ブラウザ)からのリクエストを処理して、データベースなどから必要な情報を取得し、HTMLなどの形式でクライアントに返すことを指す。サーバーサイドでは、プログラミング言語やフレームワークなどを使用して、データの処理やセキュリティなどの制御を行う。PHP
+                    Python、Ruby、Java、Node.js(JavaScript)、.NETなどを使用する。
+                </li>
+            </ul>
+            <ul  class="mark"> 
+                <li> サーバーソフト<br>
+                     Apache/nginx/IIS                  
+                     【サーバーソフト】：Webサーバーにインストールされ、HTTPリクエストを処理してWebページを配信するためのソフトウェアのこと。代表的なサーバーソフトにはApache、Nginx、Microsoft IISなどがある。
+                 </li>
+                 <li>   
+                     【Apache】：オープンソースのWebサーバーソフトウェア。高い拡張性と安定性が特徴で、動的なWebページを生成するそのためのサポートや、複数のドメインを扱うための設定などが可能。また、多くのインスタンスモジュールを提供しているため、さまざまな要件に対応することができる。<br>
+                 </li>
+                 <li> SQL<br>
+                     DB2
+                     /MySQL[Maria DB]
+                     /Oracle DB
+                     /PostgreSQL
+                     /SQLite
+                     /SQL Server
+                 </li>    
+                     <br><br>
+                     【SQL】(Structured Query Language)：リレーショナルデータベースシステム(RDBMS)を管理するために使用される言語。SQLを使用することで、データベース内のデータを選択、挿入、更新、削除などの操作ができる、複雑なデータ検索やグループ化、集計などを行うことも可能。<br>
+                     <br>
+                     【RDBMS】：ベンダー製品のOracle Db（Oracle）、SQL Server（Microsoft）、DB2（IBM）やオープンソースのMySQL、そこから派生したMaria DB、Postgre SQLなどがある。
+                     <br><br>
+                     【CRUD】：Create（登録）、Read（参照）、Update（更新）、Delete（削除）機能をまとめた表現。
+                     <br><br>
+                     【トランザクション】：複数の SQL 文によるデータ更新を1つの処理としてまとめてデータベースに反映させること。
+                     <br>
+                     　　[コミット]：一連の処理が問題なく、成功すれば整合性を保って更新される。こうして、結果が確定されることを指す。
+                     <br>
+                     　　[ロールバック]：一連の処理に問題が生じてしまい、更新するはずだった状態から開始直前の状態に戻すことを指す。
+                     <br><br>
+                     【排他制御（排他ロック）】：複数のアクセスが見込まれる場合に、同時アクセスにより不整合が発生することを防ぐため、他トランザクションからはアクセスできないようにして直列に処理されるように制御すること。
+                     <br>
+                     　　[楽観ロック]：「同時アクセスはあまり起きない」という楽観的な考え方の排他制御。データ自体をロックすることはせず、更新対象のデータが更新前と同じであるかを確認してから更新することで、データの整合性を保つ排他制御。
+                     <br>
+                     　　[悲観ロック]：同じデータを他者が頻繁に更新するという悲観的な考え方の排他制御。更新対象データを取得時にロックして他者が操作できないようにする方式。
+                     <br><br>
+                     【実行計画】：SQLserverがユーザーが発行したSQLを解析し決定した実データに対して、どのようにアクセス・計算を行うかが記載されている計画書。SQLはDBの「どの」データを取得するかをユーザーが指定するが、「どのように」そのデータを探して取得するかはSQLserverのオプティマイザ機構が決定する。その手順内容が示されたもの。
+                     <br><br>
+                     【チューニング】：データベースの処理・データベースの論理設計・SQLを調整することでパフォーマンスを向上させる目的で行う。
+                     <a href="https://qiita.com/tbtakhk/items/2b48b3185ef192c8d730" target="_blank">→参考ページ1</a>
+                     <br><br>
+                     【パフォーマンス】：低下させる要因として、非効率なSQL文・通信オーバーヘッド（余計な処理が発生し、時間が掛かかり負荷が増す）・不要な解析またはバインドが発生し、処理のオーバーヘッドが著しく増加することが原因となる。これらを実行計画を参照しチューニングすることで向上を目指す。
+                     <br><br>
+                     【スロークエリ】：
+                     <br><br>
+                     【クエリログ】：
+                     <br><br>
+                     IDE（統合開発環境）/Eclipse/NetBeans/SpringToolSuite
+                     <br><br>
+                     DBツール/A5:SQL Mk-2/pgAdmin/DBeaver/MySQL Workbench/Sequel Pro/TeamSQL
+                     <br><br>
+ 
+                 </li>
+                 <li> 肩書<br>
+                 PM
+                 /PL
+                 /PG（PE）
+                 /SE
+                 /デザイナー
+                 /エンジニア
+                 /フロントエンド・エンジニア
+                 /サーバーサイド・エンジニア
+                 /バックエンド・エンジニア</li>
+                 <li> UI（ユーザーインターフェース）<br>
+                 UI
+                 /CUI
+                 /GUI</li>
+                 <li> ファイル／ディレクトリ<br>
+                 ファイル
+                 /拡張子
+                 /ディレクトリ
+                 /ルート・ディレクトリ
+                 /カレント・ディレクトリ
+                 /パス
+                 /絶対パス
+                 /相対パス</li>
+                 <li> ネットワーク<br>
+                 LAN
+                 /WAN
+                 /クライアント
+                 /サーバー</li>
+                 <li> 各種プロトコル<br>
+                 HTTP
+                 /FTP
+                 /HTTPS
+                 /SSL
+                 /SSH
+                 /ポート、ポート番号
+                 /HTTP、FTP、SSHの各ポート番号
+                 /ファイアウォール
+                 /TCP</li>
+                 <li> IPアドレス<br>
+                 IPアドレス
+                 /グローバルIPアドレス
+                 /プライベートIPアドレス</li>
+                 <li> ドメイン<br>
+                 ドメイン
+                 /DNS
+                 /VPN
+                 /ブリッジ
+                 /プロキシサーバー</li>
+                 <li> 電子メール<br>
+                 SMTP
+                 /POP
+                 /IMAP</li>
+                 <li> セッションとクッキー<br>
+                 セッション
+                 /クッキー
+                 /キャッシュ</li>
+                 <li> DB（データベース）について<br>
+                 インデックス</li>
+                 <li> テストについて<br>
+                 フロー</li>
+                 <li> チケット管理ツール<br>
+                 タスク</li>
+                 <li> バージョン管理<br>
+                 Git
+                 /SVN
+                 /デグレ
+                 /マージツール</li>
+             <img src="images/sample1.jpg" alt="">
+             </ul>
+ 
+             <h2>第2章   </h2>
+             <ul>    
+                 <li>開発環境・検証環境・本番環境<br>
+                 基本設計書・詳細設計書
+                 /Ajax</li>
+                 <li>API<br>
+                 SVN（Subversion）</li>
+                 <li>デプロイ<br>
+                 バリデーション
+                 /アジャイル・ウォーターフォール(開発手法)</li>
+                 <li> エビデンス<br>
+                 バッチ
+                 /MVCモデル</li>
+                 <li>IDE（統合開発環境）<br>
+                 JOIN（データベースにおいて）
+                 /コンフリクト</li>
+                 <li>サブクエリ<br>
+                 Bootstrap
+                 /ライブラリ・フレームワーク
+                 </li>
+             <img src="images/sample2.jpg" alt="">
+             </ul>  
+         </div>
+
+        
+        <div class="block3">
+            <h2>Gitについて</h2>
+            <ul>
+                <li><strong>Git</strong>とは、ソースコードなどの変更履歴を管理する分散型バージョン管理システム。
+                実際の開発現場では、複数人が同じファイルを編集することがある。</li>
+                
+                <li>リポジトリ<br>チーム内で同じファイルを同時に編集してしまい、どちらが最新のファイルなのかわからなくなる。という事態を防ぐこともできる。
+                ソースコードの変更履歴を保管する場所のことを「リポジトリ」という。
+                Gitでは、ネットワーク上にこの「リポジトリ」と呼ばれる場所を作り、そこにファイルをアップロードするような感覚で使う。</li>
+                
+                <li>リモートリポジトリ<br>ネットワーク上にあるのでURLを知っている人は、誰でもその保管場所（リポジトリ）を見にいくことができる。
+                    みんなで共有するために、ネットワーク（リモート）上にある保管場所のことを「リモートリポジトリ」という。</li>
+
+                <li>ローカルリポジトリ<br>リモートリポジトリに置いてあるファイルを複製して自分のPC（ローカル）に取り込むことができる。
+                デスクトップにフォルダを作って保存するといったように、普段自分たちが開発するために使っているPCにもファイルを保存する場所がある。
+                そこを「ローカルリポジトリ」として設定して「リモートリポジトリ」と繋げることでファイルを管理していく。</li>
+
+                <p>「リモートリポジトリ」：ネットワーク上でみんなが共有しているフォルダ<br>
+                    「ローカルリポジトリ」：個人のPCで管理しているフォルダ<br>
+                    最新版を「リモートリポジトリ」にアップロードすると、他の人もその最新版を「リモートリポジトリ」からダウンロードできるようなイメージ。</p>
+                <br>
+                <img src="https://re-creative.biz/storage/cms-files/1620177004_%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88%202021-05-05%2010.07.41.png" width="60%">
+                
+                <h3>◆Gitでよく使う用語</h3>
+
+                    <li>クローン<br>
+                    自分のローカル環境にリモートリポジトリの複製(ローカルリポジトリ)を作ること。
+                    プロジェクトにアサインしたら、環境構築の時にほぼ間違いなく通る。</li>
+                    <li>コミット<br>
+                    自分の作業したファイルの変更履歴をローカルリポジトリに保存すること。</li>
+                    <li>プッシュ<br>
+                    ローカルリポジトリの変更履歴をリモートリポジトリに反映すること。
+                    これによって、ネットワーク上のリモートリポジトリから他の人が自分の変更履歴を確認できるようになる。</li>
+                    <li>マージ<br>
+                    ブランチの変更履歴の情報を他のブランチに流し込むこと。
+                    マージされたブランチはマージ元のブランチの変更履歴をすべて持っていることになる。</li>
+                    <li>プル<br>
+                    リモートリポジトリにあるブランチの変更履歴の情報をローカルリポジトリのブランチに流し込むこと。
+                    動作としてが、リモートリポジトリに更新があるか確認(フェッチ)して、更新を取り込む(マージ)になるため、フェッチ + マージ = プルということになる。</li>
+                    <li>コンフリクト<br>
+                    変更履歴の競合のこと。
+                    AさんとBさんで同じファイルで作業したりして、１つのファイルに対して別々の変更履歴があると発生する。</li>
+                    <br>        
+                    <img src="https://hogetech.info/wp-content/uploads/2022/06/612f43071a2a0f44423b8bcb86c93e1a-1.png" width="70%">
+
+
+ 
+
+        </div>
+        
+    </body>
+</html>
