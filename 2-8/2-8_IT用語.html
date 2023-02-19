@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style_it.css">
+        <title>2-8＿IT用語</title>
+    </head>
+    <body>
+        
+        <h2>IT用語まとめ</h2>
+                    
+        <div class="block1">
+            <h3>トランザクション</h3>
+            <h4>複数の SQL 文によるデータ更新を1つの処理としてまとめてデータベースに反映させること。</h4>
+            <ul>
+                <li>[コミット]：一連の処理が問題なく、成功すれば整合性を保って更新される。こうして、結果が確定されることを指す。</li>
+                <li>[ロールバック]：一連の処理に問題が生じてしまい、更新するはずだった状態から開始直前の状態に戻すことを指す。</li>
+                <a href="https://xtech.nikkei.com/it/article/COLUMN/20060328/233487/" target="_blank"><img src="https://xtech.nikkei.com/it/article/COLUMN/20060328/233487/zu1.jpg" width="60%"></a> 
+            </ul>
+        </div>
+
+        <div class="block1">
+            <h3>排他制御（排他ロック）</h3>
+            <h4>複数のアクセスが見込まれる場合に、同時アクセスにより不整合が発生することを防ぐため、他トランザクションからはアクセスできないようにして直列に処理されるように制御すること。</h4>
+            <ul>
+                <li>[楽観ロック]：「同時アクセスはあまり起きない」という楽観的な考え方の排他制御。データ自体をロックすることはせず、更新対象のデータが更新前と同じであるかを確認してから更新することで、データの整合性を保つ排他制御。</li>
+                <li>[悲観ロック]：同じデータを他者が頻繁に更新するという悲観的な考え方の排他制御。更新対象データを取得時にロックして他者が操作できないようにする方式。</li>
+                <a href="https://www.wantedly.com/companies/pactera2/post_articles/321182" target="_blank"><img src="https://d2v9k5u4v94ulw.cloudfront.net/small_light(dw=1280,da=l,ds=s,cc=FFFFFF,of=webp)/assets/images/6578693/original/740d93c9-23e4-4f06-bc3b-42d493f035ea?1618789384" width="60%"></a>
+                <li>【実行計画】：SQLserverがユーザーが発行したSQLを解析し決定した実データに対して、どのようにアクセス・計算を行うかが記載されている計画書。SQLはDBの「どの」データを取得するかをユーザーが指定するが、「どのように」そのデータを探して取得するかはSQLserverのオプティマイザ機構が決定する。その手順内容が示されたもの。</li>
+            </ul>
+        </div>
+
+        <div class="block1">
+            <h3>チューニング</h3>
+            <h4>SQLチューニングは、データベースのパフォーマンスを向上させるために、SQLクエリの実行プロセスを最適化するプロセス。</h4>
+            <ul>
+                <li>データベースの検索や更新、削除、挿入などの操作に対して行われる。</li>
+                <li>SQLクエリは、データベースのテーブルから必要な情報を取得するために使用され、SQLクエリ自体が非常に複雑であったり、データベースのテーブルが非常に大きかったりする場合、SQLクエリの実行に使用されるリソースを最適化し、クエリの実行速度を向上させることによって、データベースのパフォーマンスを向上させる。</li>
+                <li>SQLチューニングには、クエリの実行計画を最適化するためにインデックスを使用したり、クエリに合わせたテーブルの結合方法を選択することが挙げられます。専門的な知識が必要なため、データベース管理者や開発者が行うことが一般的。</li>
+                <li><a href="https://qiita.com/tbtakhk/items/2b48b3185ef192c8d730" target="_blank">→参考ページ</a>　　
+                </li>
+            </ul>
+        </div>
+
+     
+        
+    </body>
+</html>

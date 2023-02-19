@@ -1,0 +1,99 @@
+body {
+	font-family: 'M PLUS Rounded 1c', "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;	/*フォント種類*/
+	-webkit-text-size-adjust: none;
+    background: #fff;	
+	color: #555;	 
+    margin: 50px 70px;	  
+}
+
+/*画像全般の設定*/
+img {
+    margin: 20px; 
+    border: none;
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+
+table {
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
+    border-spacing: 0;
+   }
+
+   table th {
+    padding: 10px;
+    background: #e9faf9;
+    border: solid 1px #778ca3;
+   }
+
+   table td {
+    padding: 10px;
+    border: solid 1px #778ca3;
+   }
+
+h2 {
+    display: inline-block;
+	font-size: 1.6rem;		
+    margin-left: 1em;
+	margin-bottom: 10px;	
+    letter-spacing: 0.2em;	/*文字間隔を少しだけ広くとる*/
+    border-bottom: 3px solid #ccc;	
+}
+
+h3 {
+    font-size: 1.3rem;    
+}
+
+h4 {
+    font-size: 1.1rem;   
+}
+
+.block1 {
+    overflow: auto;
+    border: 1px solid #ccc;	
+	border-radius: 5px;		/*角丸のサイズ。*/
+	padding: 20px;			/*ボックス内の余白*/
+	margin-bottom: 20px;
+	background: rgba(0,0,0,0.05);	/*背景色。0,0,0は黒のことで、0.05は色が5%出た状態のこと。*/
+  }
+  
+  .block1 ul li {
+    padding: 10px 0;
+    list-style: inside;
+    margin-left: 1rem;
+    text-indent: -1rem;
+  }
+  
+    .block2 ul li {
+    line-height: 1.4;        /*行間*/
+    padding: 10px 0;
+   }   
+
+   .mark{
+    list-style: square;
+    padding: 2px 0;
+   }
+
+   .nomark {
+     list-style-type: none;
+     padding: 2px 0;
+   }
+
+
+  .block3 ul li {
+    line-height: 1.7;        /*行間*/
+    font-size: 1rem;  
+    padding: 10px 0;
+    list-style-type: none;
+    /* margin-left: 1rem; */
+    text-indent: -1rem;
+  }
+  
+  .block3 ul li::before {
+    display: inline;
+    content: "※";
+  }
+
+
