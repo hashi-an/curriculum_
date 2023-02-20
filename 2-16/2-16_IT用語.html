@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style_it.css">
+        <title>2-16＿IT用語</title>
+    </head>
+    <body>
+        
+        <h2>IT用語まとめ</h2>
+                    
+        <div class="block1">
+            <h3>ログ(意味、確認の仕方)</h3>
+            <ul>
+                <li>ログとは、コンピュータの利用履歴を記録したデータのこと。<br>
+                    「いつ」「誰が」「何をしたか」を記録し、そのデータを蓄積することができ、収集したログを分析すれば、目的に合わせてデータを活用することも可能。</li>
+ 
+                <li>windowsでの確認の仕方：コントロールパネル内のイベントビューアからログを得る</li>
+                <li>PHPでの確認の仕方：php.iniによる設定や、error_log関数により、ログ内容を得たり、ファイルに出力して確認する。</li>
+                 <li>git/gitHubでの確認の仕方：ブラウザ画面上の情報もしくは、git logコマンドで得る。</li>   
+            </ul>
+        </div>
+
+        <div class="block1">
+            <h3>クラウドサーバー、レンタルサーバー、VPSの違い</h3>
+            <h4>ネットワーク経由で使う形態になっているサーバのこと</h4>
+            <ul>
+                <a href="https://hostingstock.net/article/notes/study-of-hosting" target="_blank"><img src="https://hostingstock.net/images/article/notes/study-of-hosting/figure_01.png" width="70%"></a>
+                <li>【クラウドサーバー】1台のサーバーに加速化した専用サーバーを個別に立てる（大規模向け）ネットワーク経由で使える仮想サーバ、SaaS/PaaS/IaaSのサービスが提供される。<br>
+                    Amazon Web Services（AWS）/Microsoft Azure/IBM Cloud/Google Cloud Platformなど</li>
+                <li>【レンタルサーバー】1台のサーバーを複数サイトで共用する、サーバーをレンタル（貸し出す）するサービス（小規模・個人向け）<br>
+                    エックスサーバー/ロリポップ/mixhostなど</li>
+                <li> 【VPS（仮想専用サーバー）】１台の物理サーバー上に複数の仮想サーバー領域を設定して、複数のユーザーでそれぞれのサーバー領域を使用するサーバー（中規模向け）。1台の物理サーバーを複数人で共有する点では、一般的なレンタルサーバー（共用サーバー）に似ています。しかし、VPSの場合はそれぞれの仮想サーバー領域が独立しているため、お互いの影響を受けにくく、専用サーバーのように柔軟にカスタマイズできるのが大きな特長。</li>
+                <a href="https://academy.gmocloud.com/vps/20220615/15012" target="_blank">VPS説明</a>
+            </ul>      
+        </div>
+
+        <div class="block1">
+            <h3>PHPのFWの種類と特徴</h3>
+            <h4>PHPフレームワークとは、PHPを使用してWebアプリケーション開発する際の土台として機能するソフトウェア（クラスやライブラリの集合）のこと。
+                つまり、共通するコードに機能性を加えて形成された骨組み、枠組み。</h4>
+            <ul>
+
+                <a href="https://www.sejuku.net/blog/50118" target="_blank"><img src="https://www.sejuku.net/blog/wp-content/uploads/2018/04/c39dc0080b2a1aee4c3c11c8919f87ae-640x89.png" width="60%"></a>
+                 
+                <li>Laravel：コードが美しく書け近年人気、日本語ドキュメントもありGitHubでも好評価。</li>
+                <li>CakePHP：Ruby on Railsの影響を受けており、プログラム自動生成機能があるため、素早く開発できる。</li>
+                <li>FuelPHP：シンプルで学習の難易度が低く記述ルールが少ないため自由度が高く統一性がとりにくい、大人数が関わる開発には不向き。</li>
+                <li>Symfony：デバックツールや機能テストなどが標準装備されている多機能さが強み、大規模な開発を得意としている。</li>
+                <a href="https://giginc.co.jp/blog/giglab/php-framework" target="_blank">フレームワーク特徴　参考ページ</a><br>
+                <a href="https://freelance-start.com/articles/70" target="_blank">フレームワークとライブラリの違い　参考ページ</a>
+            </ul>
+        </div>
+
+        <div class="block1">
+            <h3>CakePHPの2系・3系の違い</h3>
+            <h4>以下の改善点により、CakePHP 3は、CakePHP 2に比べて柔軟で強力なフレームワークとなった。</h4>
+            <ul>
+                <li>名前空間の使用：PHPの名前空間を使用してコードを整理することができます。これにより、クラス名の重複を回避できるようになった。</li>
+                <li>コンフィグレーションの改善：マッチングが改善された。</li>
+                <li>ORMの改良：ORM（Object Relational Mapping）が大幅に改良され、モデルとデータベースの関係がより柔軟になった。ORMの新機能には、ビヘイビア、エンティティ、およびベルクラスが含まれる。</li>
+                <li>アダプターシステムの改善：Twigというフォントエンジンを使用することができるようになった。</li>
+                <li>規定の改良：コンポーネントが改良され、コントローラークラスの再利用が容易になった。</li>
+                <li>セキュリティの強化：XSS（クロスサイトスクリプティング）やCSRF（クロスサイトリクエストフォージェリ）攻撃などの脆弱性を防ぐための機能が追加された。</li>
+             </ul>      
+        </div>
+        
+        <div class="block1">
+            <h3>LAMP</h3>
+            <h4>オープンソースソフトウェアの組み合わせを指す言葉（略称）</h4>
+            <ul>
+                <li>具体的にはOSのLinux、WebサーバーのApache、データベースのMySQL、プログラミングのPerl、PHP、Pythonを指す。<br>
+            </ul>      
+        </div>
+
+        <div class="block1">
+            <h3>AWS</h3>
+            <h4>AWS（Amazon Web Services）は、Amazonが提供する世界で最も包括的で広く採用されているクラウドサービス</h4>
+            <ul>
+                <p>AWSがクラウドサービスで提供するサービスには、大きく分けて以下のような種類がある。</p>
+
+                <li>コンピューティング：サーバーやサーバー関連処理を行う</li>
+                <li>コンテナ：コンテナサービスに関する処理</li>
+                <li>ストレージ：ファイルストレージやバックアップに関するサービス</li>
+                <li>データベース：各種データベースサービス</li>
+                <li>各種移行：環境の移行支援</li>
+                <li>ネットワーク</li>
+                <li>開発者用サービス</li>
+                <li>管理とガバナンス：システムコンポーネントの監視や管理など</li>
+                <li>他、ロボット工学に関するものやブロックチェーン、AI関連の開発などさまざまなサービス</li>
+                <p>このようにAWSでは、コンピューティングやデータベース、ストレージといったクラウドサーバー関連のサービスだけでなく開発環境として使えるサービスや環境移行の支援サービスなど、さまざまなものが提供されている。</p>
+           </ul>      
+        </div>
+        
+    </body>
+</html>
