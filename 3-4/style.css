@@ -1,0 +1,61 @@
+
+.clearfix::after { 
+    content: ''; 
+    display: block; 
+    clear: both;
+}
+
+.h_header {
+    width: 1000px;  
+}
+
+.h_left {
+    width: 200px;  
+    height: 120px; 
+    background-color: #add8e6;
+    float: left;
+}
+
+.h_right1 { 
+    width: 800px; 
+    height: 60px; 
+    text-align: right;
+    background-color: #87ceeb;
+    float: left;
+}
+
+
+.h_right2 { 
+    width: 800px; 
+    height: 60px; 
+    text-align: right;
+    background-color: #00ffff;
+    float: left;
+}
+
+.main { 
+    width: 1000px; 
+    background-color: #ffffff;
+}
+
+table {
+    padding : 10px ;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+th {
+    background-color: #87ceeb;  
+    text-align:center;
+}
+ 
+td {
+    background-color: #e0ffff; 
+}
+
+.footer { 
+    width: 1000px; 
+    height: 50px; 
+    background-color: #00ced1;
+}
+
