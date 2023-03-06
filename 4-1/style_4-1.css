@@ -1,0 +1,35 @@
+body {
+    margin-left: 20px;
+}
+
+table {
+    margin-top: 20px;
+    border-collapse: separate;
+    border-spacing: 5px;
+}
+
+th {
+    background-color: #BDDCC3;  
+    color:#995c5f;
+    text-align:center;
+}
+ 
+td {
+    padding: 8px;
+    font-size: -3;
+    background-color: #edf0cc; 
+    color:#5F948C;
+}
+
+.middle {
+    font-size: 80%;
+    }
+
+.small {
+    text-align:center;
+    font-size: 40%;
+    }
+
+
+
+  
