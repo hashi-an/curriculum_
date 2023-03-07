@@ -11,9 +11,9 @@ check_user_logged_in();
 // 提出ボタンが押された場合
 if (isset($_POST["post"])) {
     // titleとcontentの入力チェック
-    if (!empty($_POST["title"])) {
+    if (empty($_POST["title"])) {
         echo 'タイトルが未入力です。';
-    } elseif (!empty($_POST["content"])) {
+    } elseif (empty($_POST["content"])) {
         echo 'コンテンツが未入力です。';
     }
 

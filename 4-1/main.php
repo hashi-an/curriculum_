@@ -53,6 +53,8 @@ $stmt->execute();
         </tr>
     <?php } ?>
 </table>
+<br>
+<a href="create_post.php">記事投稿！</a>
 
 </body>
 </html>
